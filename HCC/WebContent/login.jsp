@@ -10,7 +10,7 @@
 	<body>
 		<div class="container-fluid h-100">
 			<div class="row p-3">
-	  			<a href="index.jsp"><img src="img/hcc-logo.png" height="100px" alt="HCC"></a>
+	  			<a href="index.jsp"><img src="img/hcc-logo.png" height="100px" alt=""></a>
 	  		</div>
 	  		<div class="w-100 d-flex flex-column align-items-center mt-2 h-75 justify-content-center">
 				<form action="LoginController" method="post" class="w-75 text-center">
