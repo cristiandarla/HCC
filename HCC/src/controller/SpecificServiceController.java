@@ -31,6 +31,7 @@ public class SpecificServiceController extends HttpServlet {
 		String name = request.getParameter("name");
 		String desc = request.getParameter("desc");
 		String img = request.getParameter("img");
+		System.out.println(desc);
 		Service service = new Service(name, desc, img);
 		request.setAttribute("service", service);
 		request.getRequestDispatcher("specificService.jsp").forward(request, response);
