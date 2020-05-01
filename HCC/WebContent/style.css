@@ -14,3 +14,7 @@ span > a:hover {
 .activeLink {
 	color: #18578C;
 }
+
+.activeLink:hover {
+	color: #2a7bbf;
+}
