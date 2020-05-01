@@ -11,7 +11,7 @@
 <body>
   <div class="container-fluid">
 
-  	<div class="row p-3">
+  	<div class="d-flex">
   		<a href="index.jsp"><img src="img/hcc-logo.png" height="100px" alt="HCC"></a>
   	</div>
   	<div class="w-100 d-flex flex-column align-items-center mt-2">
@@ -105,7 +105,7 @@
 			        </label>
 			      </div>
 		  	</div>
-		  	<div class="row d-flex flex-row-reverse">
+		  	<div class="row d-flex flex-row-reverse mb-5">
 		  		<button type="submit" class="btn btn-success ml-3">Submit</button>
 		  		<a href="register.jsp" class="btn btn-primary">Reset</a>
 		  	</div>
