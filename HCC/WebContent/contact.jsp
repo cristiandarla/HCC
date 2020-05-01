@@ -47,7 +47,7 @@
   				  <label class="h4">Message:</label>
   				</div>
 			    <div class="col-9 pr-5">
-			      <textarea rows="10" class="form-control" placeholder="Write your essage here..."></textarea>
+			      <textarea rows="10" class="form-control" placeholder="Write your message here..."></textarea>
 			    </div>
 		  	</div>
 		  	<div class="row my-5 d-flex flex-row-reverse">
