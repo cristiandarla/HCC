@@ -12,7 +12,7 @@
 		<div class="d-flex justify-content-between">
 			<a href="index.jsp"><img src="img/hcc-logo.png" height="100px" alt="HCC"></a>
 			<div class="d-flex mr-5 align-items-center font-weight-bold">
-				<span class="mx-2 h2"><a href="services.jsp" class="h2 font-weight-bold">SERVICES</a> |</span>
+				<span class="mx-2 h2"><a href="ServiceController" class="h2 font-weight-bold">SERVICES</a> |</span>
 				<span class="mx-2 h2"><a href="register.jsp" class="h2 font-weight-bold">REGISTER</a> |</span>
 				<span class="mx-2 h2"><a href="login.jsp" class="h2 font-weight-bold">LOGIN</a> |</span>
 				<span class="mx-2 h2"><a href="contact.jsp" class="h2 font-weight-bold">CONTACT</a></span>

@@ -18,20 +18,12 @@
 					<span class="mx-2 h2"><a href="#" class="h2 font-weight-bold">CONTACT</a></span>
 				</div>
 			</div>
-			<c:set var="count" value="${0}"></c:set>
-			<div class="row p-3">
-			<c:forEach var="service" items="${requestScope.services}">
-			<c:set var="count" value="${count + 1}"></c:set>
-				<div class="col-4 text-center p-2">
-					<div class="card">
-						<a href="SpecificServiceController?name=${service.name}&desc=${service.desc}&img=${service.img}"><img class="mt-3 mb-3" src="img/hci_pictures/${service.img}" alt="${service.name}" style="width: 300px; height: 300px;"></a>
-						<a href="SpecificServiceController?name=${service.name}&desc=${service.desc}&img=${service.img}"><h3 class="p-1">${service.name}</h3></a>
-					</div>
-				</div>
-			</c:forEach>
-			<c:if test="${count % 3 == 0}">
+			<div class="">
+				<img class="rounded mx-auto d-block mt-5" src="img/hci_pictures/${requestScope.service.img}" style="width: auto; height:500px;">
+				<h1 class="pt-5">${requestScope.service.name}</h1>
+				<hr>
+				<h4>${requestScope.service.desc}</h4>
 			</div>
-			</c:if>
 		</div>
 	</body>
 </html>
