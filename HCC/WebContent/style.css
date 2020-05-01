@@ -5,7 +5,7 @@ body {
 	margin-right: auto;
 }
 
-div.my-nav > a:hover {
+span > a:hover {
 	cursor: pointer;
 	color: #636363;
 	text-decoration: none;
