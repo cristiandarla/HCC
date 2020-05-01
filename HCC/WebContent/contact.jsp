@@ -11,14 +11,18 @@
 <body>
   <div class="container-fluid">
 	<div class="d-flex justify-content-between">
-		<a href="index.jsp"><img src="img/hcc-logo.png" height="100px" alt="HCC"></a>
-		<div class="d-flex mr-5 align-items-center font-weight-bold">
-			<span class="mx-2 h2"><a href="services.jsp" class="h2 font-weight-bold">SERVICES</a> |</span>
-			<span class="mx-2 h2"><a href="register.jsp" class="h2 font-weight-bold">REGISTER</a> |</span>
-			<span class="mx-2 h2"><a href="login.jsp" class="h2 font-weight-bold">LOGIN</a> |</span>
-			<span class="mx-2 h2"><a href="contact.jsp" class="h2 font-weight-bold activeLink">CONTACT</a></span>
+			<a href="index.jsp"><img src="img/hcc-logo.png" height="100px" alt="HCC"></a>
+			<div class="d-flex mr-5 align-items-center font-weight-bold">
+				<span class="mx-2 h2"><a href="ServiceController" class="h2 font-weight-bold">SERVICES</a> |</span>
+				<span class="mx-2 h2"><a href="register.jsp" class="h2 font-weight-bold">REGISTER</a> |</span>
+				<c:if test="${!sessionScope.user}"><span class="mx-2 h2"><a href="login.jsp" class="h2 font-weight-bold">LOGIN</a> |</span></c:if>
+				<span class="mx-2 h2"><a href="contact.jsp" class="h2 font-weight-bold activeLink">CONTACT</a></span>
+				<c:if test="${sessionScope.user}"><a href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/avatar1.png" width="75px" class="ml-3 border-circle"></a></c:if>
+				  <div class="dropdown-menu shadow my-dropdown" aria-labelledby="dropdownMenuLink">
+				    <a class="dropdown-item" href="LogoutController">Log out</a>
+				  </div>
+			</div>
 		</div>
-	</div>
 	<div class="w-100 d-flex flex-column align-items-center my-5">
   		<form action="index.jsp" class="w-75 mt-5">
   			<span class="mb-5 display-4">Contact</span>

@@ -1,13 +1,9 @@
 package controller;
 
-import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,8 +12,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import org.apache.tomcat.util.http.fileupload.IOUtils;
 
 import util.Service;
 
@@ -35,16 +29,20 @@ public class ServiceController extends HttpServlet {
         super();
         // TODO Auto-generated constructor stub
     }
-    
+
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+<<<<<<< HEAD
 		
         String cwd = request.getServletContext().getRealPath("/");
         String description = cwd + "data.txt";
 		
 		FileReader fr = new FileReader(new File(description));
+=======
+		FileReader fr = new FileReader(new File("../../Users/ion_cristian.darla/git/HCC/HCC/data.csv"));
+>>>>>>> branch 'master' of https://github.com/cristiandarla/HCC.git
 		BufferedReader br = new BufferedReader(fr);
 		String s = "";
 		String delim = "/*end*/";

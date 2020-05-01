@@ -25,3 +25,10 @@ a:hover {
 .animation {
 	transition: width 1s;
 }
+
+.my-dropdown {
+    border-radius: .50rem!important;
+    transform: translate3d(calc(100vw - 120px), 65px, 0px)!important;
+    padding: 2px!important;
+    min-width: 0px!important;
+}

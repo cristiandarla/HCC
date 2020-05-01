@@ -14,8 +14,12 @@
 			<div class="d-flex mr-5 align-items-center font-weight-bold">
 				<span class="mx-2 h2"><a href="ServiceController" class="h2 font-weight-bold">SERVICES</a> |</span>
 				<span class="mx-2 h2"><a href="register.jsp" class="h2 font-weight-bold">REGISTER</a> |</span>
-				<span class="mx-2 h2"><a href="login.jsp" class="h2 font-weight-bold">LOGIN</a> |</span>
+				<c:if test="${!sessionScope.user}"><span class="mx-2 h2"><a href="login.jsp" class="h2 font-weight-bold">LOGIN</a> |</span></c:if>
 				<span class="mx-2 h2"><a href="contact.jsp" class="h2 font-weight-bold">CONTACT</a></span>
+				<c:if test="${sessionScope.user}"><a href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/avatar1.png" width="75px" class="ml-3 border-circle"></a></c:if>
+				  <div class="dropdown-menu shadow my-dropdown" aria-labelledby="dropdownMenuLink">
+				    <a class="dropdown-item" href="LogoutController">Log out</a>
+				  </div>
 			</div>
 		</div>
 		<div class="d-flex flex-column align-items-center pt-5 mt-5">

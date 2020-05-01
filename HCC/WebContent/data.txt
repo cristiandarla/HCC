@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Nowadays, owning a luxurios bathroom does not represent a dream anymore, but the way you take care of it and you 
 keep it cleaned is still a concern. Your bathroom requires a high maintenance to reflect the comfort you always
 wanted. To accomplish this, a professional team and high quality solutions are required and this is not easy to 
@@ -90,3 +91,7 @@ The window cleaning services includes:
 3.pole, high ladder and abseiling
 4.security and fly screen cleaning
 /*end*/
+=======
+ana,are,mere
+are,,n are
+>>>>>>> branch 'master' of https://github.com/cristiandarla/HCC.git
