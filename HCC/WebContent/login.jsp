@@ -8,13 +8,14 @@
 		<title>HCC - Login</title>
 	</head>
 	<body>
-		<div class="container-fluid">
+		<div class="container-fluid h-100">
 			<div class="row p-3">
 	  			<a href="index.jsp"><img src="img/hcc-logo.png" height="100px" alt="HCC"></a>
 	  		</div>
-	  		<div class="w-100 d-flex flex-column align-items-center mt-2">
+	  		<div class="w-100 d-flex flex-column align-items-center mt-2 h-75 justify-content-center">
 				<form action="index.jsp" class="w-75 text-center">
-					<div class="row form-group">
+					<span class="display-4">Login</span>
+					<div class="row form-group mt-5">
 						<div class="col-4 text-left">
 						<h4>Email:</h4>
 						</div>
