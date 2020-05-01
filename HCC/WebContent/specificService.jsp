@@ -26,7 +26,7 @@
 				<img class="rounded mx-auto d-block mt-5" src="img/hci_pictures/${requestScope.service.img}" style="width: auto; height:500px;">
 				<h1 class="pt-5">${requestScope.service.name}</h1>
 				<hr>
-				<h4>${requestScope.service.desc}</h4>
+				<h4 class="pb-5">${requestScope.service.desc}</h4>
 			</div>
 		</div>
 	</body>

@@ -30,6 +30,17 @@ public class ServiceController extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
 
+    private static boolean isNumeric(String strNum) {
+        if (strNum == null) {
+            return false;
+        }
+        try {
+            double d = Double.parseDouble(strNum);
+        } catch (NumberFormatException nfe) {
+            return false;
+        }
+        return true;
+    }
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
@@ -50,7 +61,11 @@ public class ServiceController extends HttpServlet {
 				descr.add(text);
 				text = "";
 			}else {
-				text += s + "&#13;&#10;";
+				//text += s + "<br>";
+				if(isNumeric(s.substring(0,1)))
+					text +=  "<br>" + s;
+				else
+					text += s + " ";
 			}
 		}
 		s = "";
