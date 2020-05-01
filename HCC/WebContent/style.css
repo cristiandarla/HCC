@@ -16,5 +16,12 @@ span > a:hover {
 
 .activeLink:hover {
 	color: #2a7bbf;
-	text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.animation {
+	transition: width 1s;
 }

@@ -19,7 +19,7 @@
 						<h4>Email:</h4>
 						</div>
 						<div class="col-8">
-							<input type="email" class="form-control" placeholder="Email address" required>
+							<input type="email" class="form-control animation w-50" onclick="transition()" placeholder="Email address" required>
 						</div>
 					</div>
 						
@@ -28,14 +28,14 @@
 							<h4>Password:</h4>
 						</div>
 						<div class="col-8">
-							<input type="password" class="form-control" placeholder="Password" required>
+							<input type="password" class="form-control animation w-50" onclick="transition()" placeholder="Password" required>
 						</div>
 					</div>
 						
 					<div class="row">
 						<div class="col-4">
 						</div>
-						<div class="col-4">
+						<div class="col-4 pr-0">
 							<button type="submit" class="btn btn-success btn-lg btn-block">Submit</button>
 						</div>
 						<div class="col-4">
@@ -45,5 +45,16 @@
 				</form>
 			</div>
 		</div>
+		<script>
+			function transition(){
+				var elements = document.getElementsByClassName("animation");
+				if(elements[0].classList.contains("w-50")){
+					elements[0].classList.remove("w-50");
+					elements[1].classList.remove("w-50");
+				}
+					
+			}
+		</script>
 	</body>
+
 </html>
