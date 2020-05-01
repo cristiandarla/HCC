@@ -9,8 +9,10 @@
 </head>
 	
 <body>
-  <div class="container fluid">
-  
+  <div class="container-fluid">
+  	<div class="row">
+  		<a href="index.jsp"><img src="img/hcc-logo.png" width="350px" alt="HCC"></a>
+  	</div>
   </div>
 </body>
 </html>
