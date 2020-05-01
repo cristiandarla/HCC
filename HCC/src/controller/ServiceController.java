@@ -42,15 +42,35 @@ public class ServiceController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
         String cwd = request.getServletContext().getRealPath("/");
-        cwd += "data.csv";
+        String description = cwd + "data.txt";
 		
-		FileReader fr = new FileReader(new File(cwd));
+		FileReader fr = new FileReader(new File(description));
 		BufferedReader br = new BufferedReader(fr);
 		String s = "";
+		String delim = "/*end*/";
+		String text ="";
+		List<String> descr = new ArrayList<>();
+		while((s = br.readLine()) != null) {
+			if( s.equals(delim)) {
+				descr.add(text);
+				text = "";
+			}else {
+				text += s + "&#13;&#10;";
+			}
+		}
+		s = "";
+		cwd += "data.csv";
+		fr = new FileReader(new File(cwd));
+		br = new BufferedReader(fr);
 		List<Service> services = new ArrayList<>();
+		int count = 0;
 		while((s = br.readLine()) != null) {
 			String[] values = s.split(",");
-			Service service = new Service(values[0], values[1], values[2]);
+			Service service = new Service();
+			service.setName(values[0]);
+			service.setImg(values[1]);
+			service.setDesc(descr.get(count));
+			count++;
 			services.add(service);
 		}
 		request.setAttribute("services", services);

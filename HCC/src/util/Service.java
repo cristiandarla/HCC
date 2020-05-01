@@ -3,6 +3,8 @@ public class Service {
 	
 	private String name, desc, img;
 
+	public Service() {
+	}
 	public Service(String name, String desc, String img) {
 		super();
 		this.name = name;
