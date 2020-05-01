@@ -28,8 +28,8 @@
 			<c:set var="count" value="${count + 1}"></c:set>
 				<div class="col-4 text-center p-2">
 					<div class="card">
-						<a href="SpecificServiceController?name=${service.name}&desc=${service.desc}&img=${service.img}"><img class="mt-3 mb-3" src="img/hci_pictures/${service.img}" alt="${service.name}" style="width: 300px; height: 300px;"></a>
-						<a href="SpecificServiceController?name=${service.name}&desc=${service.desc}&img=${service.img}"><h3 class="p-1">${service.name}</h3></a>
+						<a href="SpecificServiceController?name=${service.name}&desc=${service.desc}&img=${service.img}"><img class="mt-3 mb-3 rounded" src="img/hci_pictures/${service.img}" alt="${service.name}" style="width: 300px; height: 300px;"></a>
+						<a href="SpecificServiceController?name=${service.name}&desc=${service.desc}&img=${service.img}"><h3 class="p-1" style="text-transform: uppercase">${service.name}</h3></a>
 					</div>
 				</div>
 			</c:forEach>

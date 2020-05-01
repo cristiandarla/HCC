@@ -34,15 +34,12 @@ public class ServiceController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-<<<<<<< HEAD
-		
+
         String cwd = request.getServletContext().getRealPath("/");
         String description = cwd + "data.txt";
 		
 		FileReader fr = new FileReader(new File(description));
-=======
-		FileReader fr = new FileReader(new File("../../Users/ion_cristian.darla/git/HCC/HCC/data.csv"));
->>>>>>> branch 'master' of https://github.com/cristiandarla/HCC.git
+
 		BufferedReader br = new BufferedReader(fr);
 		String s = "";
 		String delim = "/*end*/";
