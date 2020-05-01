@@ -6,7 +6,6 @@ body {
 }
 
 span > a:hover {
-	cursor: pointer;
 	color: #636363;
 	text-decoration: none;
 }
@@ -17,4 +16,5 @@ span > a:hover {
 
 .activeLink:hover {
 	color: #2a7bbf;
+	text-decoration: none;
 }
