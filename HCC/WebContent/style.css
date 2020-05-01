@@ -32,3 +32,11 @@ a:hover {
     padding: 2px!important;
     min-width: 0px!important;
 }
+
+img {
+	object-fit: cover;
+}
+
+div.card:hover {
+  background-color: #f7f7f7;
+}
