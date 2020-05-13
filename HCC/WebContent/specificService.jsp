@@ -28,6 +28,9 @@
 				<hr>
 				<h4 class="pb-5">${requestScope.service.desc}</h4>
 			</div>
+			<div class="d-flex flex-row-reverse mb-2">
+				<a class="btn btn-primary" href="ServiceController">Back</a>
+			</div>
 		</div>
 	</body>
 </html>
